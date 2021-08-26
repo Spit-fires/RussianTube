@@ -7,3 +7,9 @@ const bot = new Aoijs.Bot({
 bot.onMessage()
 
 bot.loadCommands('./commands')
+
+bot.readyCommand({
+  channel: "",
+  code: `$log[ready on $clientID]`
+  
+})
