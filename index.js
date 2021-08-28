@@ -1,7 +1,7 @@
 const aoijs = require("aoi.js")
 
 const bot = new aoijs.Bot({
-  token: "process.env.token", //Discord Bot Token
+  token: process.env.token, //Discord Bot Token
   prefix: "rt!" //Discord Bot Prefix
 })
 bot.onMessage() //Allows to execute Commands
